@@ -1,4 +1,4 @@
-package com.androidcodeman.simpleimagegallery;//package com.example.dbentrysearch.db;
+package com.example.smartgallery_groupt15;//package com.example.dbentrysearch.db;
 
 
 import android.content.ContentValues;
@@ -7,8 +7,8 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-import com.androidcodeman.simpleimagegallery.TupleTypes.TupStrInt;
-import com.androidcodeman.simpleimagegallery.TupleTypes.TupStrStr;
+import com.example.smartgallery_groupt15.TupleTypes.TupStrInt;
+import com.example.smartgallery_groupt15.TupleTypes.TupStrStr;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -65,6 +65,7 @@ public class DBHandler extends SQLiteOpenHelper {
         }
         String contentStr = contentBuilder.toString();
         ContentValues values = new ContentValues();
+
         String checkQuery = "SELECT " + CONTENTS + " FROM " + TABLE_NAME +
                 " WHERE URI = '" + uri + "'";
         Cursor cursor = db.rawQuery(checkQuery, null);

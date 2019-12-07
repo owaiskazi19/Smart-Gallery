@@ -1,4 +1,4 @@
-package com.androidcodeman.simpleimagegallery;
+package com.example.smartgallery_groupt15;
 
 import android.database.Cursor;
 import android.net.Uri;
@@ -12,12 +12,12 @@ import android.util.Log;
 import android.view.View;
 import android.widget.ProgressBar;
 import android.widget.TextView;
-import com.androidcodeman.simpleimagegallery.fragments.pictureBrowserFragment;
-import com.androidcodeman.simpleimagegallery.utils.MarginDecoration;
-import com.androidcodeman.simpleimagegallery.utils.PicHolder;
-import com.androidcodeman.simpleimagegallery.utils.itemClickListener;
-import com.androidcodeman.simpleimagegallery.utils.pictureFacer;
-import com.androidcodeman.simpleimagegallery.utils.picture_Adapter;
+import com.example.smartgallery_groupt15.fragments.pictureBrowserFragment;
+import com.example.smartgallery_groupt15.utils.MarginDecoration;
+import com.example.smartgallery_groupt15.utils.PicHolder;
+import com.example.smartgallery_groupt15.utils.itemClickListener;
+import com.example.smartgallery_groupt15.utils.pictureFacer;
+import com.example.smartgallery_groupt15.utils.picture_Adapter;
 import java.util.ArrayList;
 
 /**

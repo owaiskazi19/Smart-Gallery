@@ -2,11 +2,7 @@
 //
 //public class ImageProcess {
 //}
-package com.androidcodeman.simpleimagegallery;
-
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.os.Bundle;
+package com.example.smartgallery_groupt15;
 
 import android.app.Activity;
 import android.content.Context;
@@ -20,16 +16,13 @@ import android.media.Image;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Build;
-import android.os.Bundle;
 import android.util.Log;
 import android.util.SparseIntArray;
 import android.view.Surface;
-import android.view.View;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
-import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -50,7 +43,6 @@ import java.io.IOException;
 import java.nio.ByteBuffer;
 import java.util.ArrayList;
 import java.util.List;
-import android.os.Environment;
 import java.io.File;
 
 
@@ -123,8 +115,8 @@ this.context=context;
 
                                             }
 
-
-                                            dbHandler.addImageMeta(path1, labelslist, 0L);
+if (!labelslist.isEmpty()){ System.out.println("labels list is not empty:"+labelslist);
+                                            dbHandler.addImageMeta(path1, labelslist, 0L);}
                                         }
 
                                     })
@@ -176,7 +168,8 @@ this.context=context;
                                             }
                                         }
                                     }
-                                    dbHandler.addImageMeta(path,textlist,0L);
+                                    if (!textlist.isEmpty()){ System.out.println("labels list is not empty:"+textlist);
+                                    dbHandler.addImageMeta(path,textlist,0L);}
                                     // [END get_text]
 //                                    return textlist;
                                     // [END_EXCLUDE]
@@ -370,7 +363,7 @@ this.context=context;
             // On most devices, the sensor orientation is 90 degrees, but for some
             // devices it is 270 degrees. For devices with a sensor orientation of
             // 270, rotate the image an additional 180 ((270 + 270) % 360) degrees.
-            CameraManager cameraManager = (CameraManager) context.getSystemService(CAMERA_SERVICE);
+            CameraManager cameraManager = (CameraManager) context.getSystemService(context.CAMERA_SERVICE);
             int sensorOrientation = cameraManager
                     .getCameraCharacteristics(cameraId)
                     .get(CameraCharacteristics.SENSOR_ORIENTATION);

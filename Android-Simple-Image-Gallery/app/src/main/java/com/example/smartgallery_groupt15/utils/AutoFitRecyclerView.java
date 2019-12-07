@@ -1,4 +1,4 @@
-package com.androidcodeman.simpleimagegallery.utils;
+package com.example.smartgallery_groupt15.utils;
 
 import android.content.Context;
 import android.content.res.TypedArray;

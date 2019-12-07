@@ -1,4 +1,4 @@
-package com.androidcodeman.simpleimagegallery;
+package com.example.smartgallery_groupt15;
 
 import java.util.Comparator;
 

@@ -1,11 +1,11 @@
-package com.androidcodeman.simpleimagegallery.utils;
+package com.example.smartgallery_groupt15.utils;
 
 import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 import android.view.View;
 import android.widget.ImageView;
-import com.androidcodeman.simpleimagegallery.R;
+import com.example.smartgallery_groupt15.R;
 
 /**
  * Author CodeBoy722

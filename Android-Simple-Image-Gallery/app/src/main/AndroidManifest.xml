@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.androidcodeman.simpleimagegallery">
+    package="com.example.smartgallery_groupt15">
 
     <uses-permission
         android:name="android.permission.READ_EXTERNAL_STORAGE"
@@ -18,12 +18,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ImageProcessActivity" />
+        <activity android:name="com.example.smartgallery_groupt15.ImageProcess" />
         <activity
-            android:name=".ImageDisplay"
+            android:name="com.example.smartgallery_groupt15.ImageDisplay"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".MainActivity"
+            android:name="com.example.smartgallery_groupt15.MainActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

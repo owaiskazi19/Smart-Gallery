@@ -1,4 +1,4 @@
-package com.androidcodeman.simpleimagegallery;
+package com.example.smartgallery_groupt15;
 
 import android.Manifest;
 import android.content.Intent;
@@ -18,14 +18,13 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.androidcodeman.simpleimagegallery.utils.MarginDecoration;
-import com.androidcodeman.simpleimagegallery.utils.PicHolder;
-import com.androidcodeman.simpleimagegallery.utils.imageFolder;
-import com.androidcodeman.simpleimagegallery.utils.itemClickListener;
-import com.androidcodeman.simpleimagegallery.utils.pictureFacer;
-import com.androidcodeman.simpleimagegallery.utils.pictureFolderAdapter;
+import com.example.smartgallery_groupt15.utils.MarginDecoration;
+import com.example.smartgallery_groupt15.utils.PicHolder;
+import com.example.smartgallery_groupt15.utils.imageFolder;
+import com.example.smartgallery_groupt15.utils.itemClickListener;
+import com.example.smartgallery_groupt15.utils.pictureFacer;
+import com.example.smartgallery_groupt15.utils.pictureFolderAdapter;
 
-import java.io.File;
 import java.util.ArrayList;
 
 /**
